@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <title></title>
+</head>
+<body>
+
+<nav class="navbar navbar-default" role="navigation">
+
+    <div class="container-fluid">
+        <div class="navbar-header logo">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#nav-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a id="title" class="navbar-brand" href="index.jsp">
+                HR Home Page
+            </a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav-collapse">
+            <!-- Individual Navbar elements -->
+            <ul class="nav navbar-nav navbar-right">
+                <li role="presentation"><a href="register.jsp">Sign up</a></li>
+                <li role="presentation"><a href="login.jsp">Login</a></li>
+            </ul>
+        </div>
+    </div>
+    <!-- Container fluid-->
+</nav>
+
+<p class="header">This is the home page of our HR application</p>
+
+<div id="pagedescription" class="description">
+    Here you can access the list of employees or you can access the page for adding a new employee.
+</div>
+
+<div id="appmenu" class="description">
+    <ul class="list-group">
+        <li class="list-group-item"><a href="list.html">Employees list</a></li>
+        <li class="list-group-item"><a href="addEmployee.html">Add employee</a></li>
+    </ul>
+</div>
+<div class="btn-group">
+    <button role="presentation" type="button" onclick="showMenu()" class="btn btn-default">Show Menu</button>
+    <button role="presentation" type="button" onclick="hideMenu()" class="btn btn-default">Hide Menu</button>
+</div>
+</body>
+</html>
