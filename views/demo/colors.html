@@ -1,0 +1,26 @@
+<div class="container">
+
+
+    <div class="panel-body">
+        <!--TODO #1 create the select element-->
+        <select ng-model="currentColor" ng-change="changeColor()" ng-options="color.text for color in colors"></select>
+        <br>
+        <!--TODO #4-->
+        <span ng-class="cuaalor.class">text</span>
+    </div>
+
+    <p>---------------------------</p>
+
+    <!--TODO#8-->
+    <input name="input" ng-model="input1">
+    <input name="input" ng-model="input2">
+
+    <table>
+        <tr ng-repeat="color in colors | orderBy:input1 | filter:input2">
+            <td>{{color.text}} </td>
+
+        </tr>
+
+    </table>
+
+</div>
